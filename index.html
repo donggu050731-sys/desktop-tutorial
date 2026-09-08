@@ -920,6 +920,10 @@
       margin-top: 8px;
     }
 
+    .goat-card .player-title.lost {
+      color: var(--text-muted);
+    }
+
     .vs-badge {
       font-family: 'Outfit', sans-serif;
       font-size: 2rem;
@@ -1255,7 +1259,7 @@
       <div class="sport-card soccer">
         <span class="sport-emoji">⚽</span>
         <h3 class="sport-name">축구</h3>
-        <p class="sport-desc">세계에서 가장 아름다운 게임.<br>호날두는 역사상 최고의 선수!</p>
+        <p class="sport-desc">세계에서 가장 아름다운 게임.</p>
       </div>
       <div class="sport-card baseball">
         <span class="sport-emoji">⚾</span>
@@ -1271,23 +1275,24 @@
         역사상 최고의 선수 GOAT
       </div>
       <div class="goat-cards">
-        <div class="goat-card">
+        <div class="goat-card winner">
           <div class="player-photo">
             <img src="messi.jpg" alt="리오넬 메시" onerror="this.parentElement.classList.add('img-missing')">
             <span class="player-flag">🇦🇷</span>
           </div>
           <p class="player-name">리오넬 메시</p>
           <p class="player-sport">축구</p>
+          <p class="player-title">🏆 승자 🏆</p>
         </div>
         <div class="vs-badge">VS</div>
-        <div class="goat-card winner">
+        <div class="goat-card">
           <div class="player-photo">
-            <img src="ronaldo.jpg" alt="크리스티아누 호날두" onerror="this.parentElement.classList.add('img-missing')">
+            <img src="ronaldo.jpg" alt="크리스티아누 호날두" style="object-position: 43% center" onerror="this.parentElement.classList.add('img-missing')">
             <span class="player-flag">🇵🇹</span>
           </div>
           <p class="player-name">크리스티아누 호날두</p>
           <p class="player-sport">축구</p>
-          <p class="player-title">🏆 승자 🏆</p>
+          <p class="player-title lost">완패 😭</p>
         </div>
       </div>
       <p class="siuuu">SIUUUUUUUUU 🎉</p>
